@@ -1,0 +1,69 @@
+{
+  "type": "record",
+  "name": "Employee",
+  "fields": [
+    {"name": "emp_id", "type": "string"},
+    {"name": "employee_name", "type": "string"},
+    {"name": "department", "type": "string"},
+    {"name": "state", "type": "string"},
+    {"name": "salary", "type": "int"},
+    {"name": "age", "type": "int"},
+    {"name": "bonus", "type": "int"},
+    {"name": "ts", "type": "long"},
+    {
+      "name": "properties",
+      "type": {
+        "type": "record",
+        "name": "Properties",
+        "fields": [
+          {
+            "name": "address",
+            "type": {
+              "type": "record",
+              "name": "Address",
+              "fields": [
+                {"name": "street", "type": "string"},
+                {"name": "city", "type": "string"},
+                {"name": "zip", "type": "string"}
+              ]
+            }
+          },
+          {
+            "name": "employment",
+            "type": {
+              "type": "record",
+              "name": "Employment",
+              "fields": [
+                {"name": "position", "type": "string"},
+                {"name": "experience_years", "type": "int"},
+                {"name": "is_manager", "type": "boolean"}
+              ]
+            }
+          },
+          {
+            "name": "contacts",
+            "type": {
+              "type": "record",
+              "name": "Contacts",
+              "fields": [
+                {"name": "email", "type": "string"},
+                {"name": "phone", "type": "string"}
+              ]
+            }
+          },
+          {
+            "name": "preferences",
+            "type": {
+              "type": "record",
+              "name": "Preferences",
+              "fields": [
+                {"name": "newsletter_subscribed", "type": "boolean"},
+                {"name": "preferred_language", "type": "string"}
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

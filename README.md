@@ -3,6 +3,10 @@ delta-kaka-varient
 
 ![output](https://github.com/user-attachments/assets/e7bbe9f5-1d1f-493f-ad87-f8479cdd3535)
 
+
+# blog 
+https://www.linkedin.com/pulse/learn-how-ingest-semi-structured-data-from-kafka-topics-soumil-shah-6okxe/?trackingId=UwHTgiaiSkK8FkBLAxdFAw%3D%3D
+
 # job
 ```
 spark-submit \
